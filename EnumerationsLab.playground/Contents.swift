@@ -4,23 +4,59 @@ import UIKit
 
 // a. Define an enumeration called iOSDeviceType with member values iPhone, iPad, iWatch. Create a variable called myiPad and assign it to .iPad.
 
-// Your code here
+enum iOSDeviceType {
+    case iPhone(String)
+    case iPad(String)
+    case iWatch
+    
+}
+
+var myiPad = iOSDeviceType.iPad
 
 // Uncomment the lines below to test your solution
 
-//let myiPad = iOSDeviceType.iPad
-//assert(myiPad == .iPad)
+// let myiPad = iOSDeviceType.iPad
+// assert(myiPad == .iPad)
 
 // b. Adjust your code above so that iPhone and iPad have associated values of type String which represents the model number.  Create an instance of a .iPhone("8+") and assign it to a variable called myPhone
 
-// Your code here
+let myPhone = iOSDeviceType.iPhone("8+")
 
 // Uncomment the lines below to test your solution
 
-//switch myPhone {
-//case let .iPhone(model): assert(model == "8+", "Was expecting a model type of 8+, but got \(model)")
-//default: fatalError("Was expecting an iPhone but got \(myPhone)")
-//}
+switch myPhone {
+case let .iPhone(model): assert(model == "8+", "Was expecting a model type of 8+, but got \(model)")
+default: fatalError("Was expecting an iPhone but got \(myPhone)")
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Question Two
 
@@ -50,6 +86,37 @@ enum Step {
 //
 //assert(endPosition == expectedEndPosition, "Was expecting \(expectedEndPosition) but got \(endPosition)")
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Question Three
 
 // You are given a Coin enumeration which describes different coin values. Write a function called getTotalValue(from:) that takes in an array of tuples of type (number: Int, coin: Coin), and returns the total value of all coins in cents.
@@ -78,6 +145,25 @@ enum Coin: Int {
 //let total = getTotalValue(from: coinArr)
 //assert(total == expectedTotal, "Was expecting \(expectedTotal), but got \(total)")
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Question Four
 
 // Write an enum called Day to represent the days of the week with a raw value of type String.
@@ -94,6 +180,30 @@ enum Coin: Int {
 //assert(Day.friday.isWeekday() == true, "Friday is a weekday")
 //assert(Day.saturday.isWeekday() == false, "Saturday is not a weekday")
 //assert(Day.sunday.isWeekday() == false, "Sunday is not a weekday")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Question Five
 

@@ -75,7 +75,26 @@ enum Step {
     case right
 }
 
-// Your function here
+
+let up = Step.up
+let down = Step.down
+let left = Step.left
+let right = Step.right
+
+func getPosition(_ x: Int,_ y: Int) -> (Int, Int) {
+    switch Step {
+    case up:
+        x + 1
+    case down:
+        x - 1
+    case right:
+        y + 1
+    case left:
+        y - 1
+    }
+}
+
+
 
 // Uncomment the lines below to test your solution
 
@@ -128,7 +147,13 @@ enum Coin: Int {
     case quarter = 25
 }
 
-// Your function here
+func getTotalValue(number: Int, coin: Coin) -> Int {
+    switch Coin {
+    case Coin.penny: {
+        
+        }
+    }
+}
 
 // Uncomment the lines below to test your solution
 
@@ -169,7 +194,29 @@ enum Coin: Int {
 // Write an enum called Day to represent the days of the week with a raw value of type String.
 // Write a method inside Day that returns whether or not it is a weekday (Monday - Friday)
 
-// Your code here
+enum Day: String {
+    case monday
+    case tuesday
+    case wednesday
+    case thursday
+    case friday
+    case saturday
+    case sunday
+    func whatDayIsIt(Day) -> String {
+        case monday: {
+            print("Monday is a weekday")
+            case tuesday: {
+            print("Tuseday is a weekday")
+            case wednesday: {
+            print("Wednesday is a weekday")
+            case thursday: {
+            9k,cx
+            }
+            }
+            }
+        }
+    }
+}
 
 // Uncomment the lines below to test your solution
 
